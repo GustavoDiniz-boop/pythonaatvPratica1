@@ -1,0 +1,14 @@
+def busca_binaria(lista, valor):
+    esquerda, direita = 0, len(lista) - 1
+
+    while esquerda <= direita:
+        meio = (esquerda + direita) // 2
+
+        if lista[meio] == valor:
+            return meio  # Retorna o índice onde o valor foi encontrado
+        elif lista[meio] < valor:
+            esquerda = meio + 1
+        else:
+            direita = meio - 1
+
+    return -1  # Retorna -1 se o valor não foi encontrado na lista
