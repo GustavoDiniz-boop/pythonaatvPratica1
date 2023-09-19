@@ -1,0 +1,5 @@
+def busca_linear(lista, valor):
+    for i, elemento in enumerate(lista):
+        if elemento == valor:
+            return i  # Retorna o índice onde o valor foi encontrado
+    return -1  # Retorna -1 se o valor não foi encontrado na lista
